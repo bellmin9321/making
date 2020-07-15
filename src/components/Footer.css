@@ -1,0 +1,40 @@
+.footer {
+    height: 450px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.container {
+    width: 80%;
+}
+
+.footer-sidebars {
+    
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+}
+
+.bar {
+    padding: 10px;
+    width: 100%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.widget-title {
+    
+    z-index: 0;
+    top: 13px;
+}
+
+.text {
+    color: #868686;
+    margin: 5px;
+}

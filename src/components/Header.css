@@ -1,0 +1,12 @@
+
+.Header {
+    cursor: pointer;
+    width: 50%;
+    height: 150px;
+    font-size: 35px;
+    font-weight: 1000;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+  

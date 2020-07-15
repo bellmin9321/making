@@ -1,0 +1,38 @@
+.posters {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.poster {
+    width: 50%;
+}
+
+.poster > img {
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.poster > img:hover{
+    cursor: pointer;
+    transform: 80%;
+    opacity: 0.7;
+    backface-visibility: hidden;
+}
+
+.desc {
+    width: 90%;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.desc:hover {
+    color: red;
+    transition: all 0.15s ease;
+}
+
+.poster desc {
+    margin: 20px;
+}
+
