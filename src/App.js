@@ -1,3 +1,9 @@
+// var express = require("express");
+// var path = require("path");
+
+// var app = exrpess();
+// app.use(express.static(path.join(__dirname,"/html")));
+
 import React from 'react';
 import './App.css';
 import Header from './components/Header'
@@ -6,14 +12,14 @@ import Poster from './components/Poster'
 
 import AboutPage from './pages/AboutPage'
 import BoardPage from './pages/BoardPage'
-import LoginPage from './pages/LoginPage'
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
+import Login from './pages/Login'
+import {Link, Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
   return (
     <div className="page-wrapper">
       <div className="single-container">
-        <BrowserRouter>
+        <Router>
         <div className="navbar-inner">
           <div className="container">
             <Header/>
@@ -22,7 +28,8 @@ function App() {
                   <Switch>
                     <Route path="/About" component={AboutPage}/>
                     <Route path="/Board" component={BoardPage}/>
-                    <Route path="/Login" component={LoginPage}/>
+                    <Route path="/Login" component={Login}/>
+                    
                   </Switch>
               
                 <div>
@@ -62,10 +69,11 @@ function App() {
           </aside>
         </div>
         <div><Footer/></div>
-        </BrowserRouter>
+        </Router>;
       </div>  
     </div>
   );
 }
+
 
 export default App;
