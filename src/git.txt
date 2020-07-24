@@ -1,3 +1,5 @@
+
+<200723>
 1. git init > 새로운 local repository 생성
 2. git add > 변경된 파일을 storage에 추가
 3. git commit > add한 파일을 local repository에 저장
@@ -20,5 +22,16 @@ master가 아닌 다른 branch로 push 하고 싶으면, 아래와 같이 master
               > 명령어가 동작하지 않을 때 에러 확인
               > 내가 작업한 파일 외에 다른 파일이 수정됐는지 확인
 
-7. 
+7. git remote -v > 현재 저장된 원격 저장소 이름
 
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, upstream
+
+git push --set-upstream origin master
+
+위와 같은 오류 발생시 git remote -v 후 git push origin master
+
+8. LF will be replaced by CRLF in ...
+https://dabo-dev.tistory.com/13 참고
+해결방안
+git config --global core.autocrlf true
